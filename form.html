@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+	<title>Ejemplo de formulario</title>
+	</head>
+<body>
+	<h3>Formulario</h3>
+	<form action="formulario.php" method="post">
+		<input type="hidden" name="codigo_solicitud" value="x76345P09" />
+		Nombre:
+		<input type="text" name="nombre" value="" />
+		<br>
+		Edad:
+		<input type="text" name="edad" value="" />
+		<br>
+		Contraseña:
+		<input type="pwd" name="contrasena" value=""/>
+		<br>
+		Género:
+		<input type="radio" name="genero" value="Hombre" checked="chequed" />
+		Hombre
+		<input type="radio" name="genero" value="Mujer" />
+		Mujer
+		<br>
+		Puestos de trabajo buscados:
+		<input type="checkbox" name="puesto_directivo" value="directivo" />
+		Directivo
+		<input type="checkbox" name="puesto_tecnico" value="tecnico" />
+		Técnico:
+		<input type="checkbox" name="puesto_obrero" value="obrero" />
+		Obrero:
+		<br>
+		<label for="so"> Sistema Operativo</label>
+		<select id="so" name="so">
+			<option value="" selected="selected">-Selecciona una opción-</option>
+			<option value="windows">Windows</option>
+			<option value="macintosh">Macintosh</option>
+			<option value="linux">Linux</option>
+		</select>
+		<br>
+		<label for="observaciones">Observaciones</label>
+		<br>
+		<textarea id="observaciones" name="observaciones" cols="40" rows="5"></textarea>
+		<br>
+		<input type="submit" name="Enviar" />
+	</form>
+
+</body>
+</html>
